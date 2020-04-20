@@ -1,4 +1,20 @@
 ## Welcome to Learning Pages
+Add the theme gem to your site’s Gemfile:
+
+# ./Gemfile
+
+# This is an example, declare the theme gem you want to use here
+gem "jekyll-theme-minimal"
+Install the theme:
+
+bundle install
+Add the following to your site’s _config.yml to activate the theme:
+
+theme: jekyll-theme-minimal
+Build your site:
+
+bundle exec jekyll serve
+You can have multiple themes listed in your site’s 
 
 You can use the [editor on GitHub](https://github.com/edutainer/github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
