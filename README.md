@@ -19,6 +19,16 @@ You can have multiple themes listed in your site’s
 You can use the [editor on GitHub](https://github.com/edutainer/github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+--------------
+GH-PAGES
+https://webdesign.tutsplus.com/hu/tutorials/setting-up-jekyll-for-github-pages-in-60-seconds--cms-27256
+https://www.jtechlog.hu/2015/01/24/atallas-github-pagesre.html
+https://blog.serpens.hu/miert-legyen-statikus-blogunk
+https://edutainer.github.io/progblog/
+https://edutainer.github.io/github.io/
+
+explorer \Ruby27-x64\lib\ruby\gems\2.7.0\gems\minima-2.5.1
+-----------------
 
 ### Markdown
 
