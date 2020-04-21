@@ -1,4 +1,4 @@
-[On Github](https://github.com/edutainer/github.io/master/README.md) - 
+[On Github](https://github.com/edutainer/github.io/blob/master/README.md) - 
 [On GH-Pages](https://edutainer.github.io/github.io/) - 
 [ProgBlog Wiki](https://github.com/edutainer/progblog/wiki)
 
