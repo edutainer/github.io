@@ -1,6 +1,6 @@
 [On Github](https://github.com/edutainer/github.io/blob/master/README.md) - 
 [On GH-Pages](https://edutainer.github.io/github.io/) - 
- [github.io Wiki](https://edutainer.github.io/github.io/wiki) - 
+ [github.io Wiki](https://github.com/edutainer/github.io/wiki) - 
 [ProgBlog Wiki](https://github.com/edutainer/progblog/wiki) -
 
 ## Welcome to Learning Pages
