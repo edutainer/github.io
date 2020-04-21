@@ -1,3 +1,7 @@
+[On Github](https://github.com/edutainer/github.io/edit/master/README.md) - 
+[On GH-Pages](https://edutainer.github.io/github.io/) - 
+[ProgBlog Wiki](https://github.com/edutainer/progblog/wiki)
+
 ## Welcome to Learning Pages
 Add the theme gem to your site’s Gemfile:
 
