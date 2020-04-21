@@ -1,3 +1,11 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: home
+---
+
+
 [On Github](https://github.com/edutainer/github.io/blob/master/README.md) - 
 [On GH-Pages](https://edutainer.github.io/github.io/) - 
  [github.io Wiki](https://github.com/edutainer/github.io/wiki) - 
