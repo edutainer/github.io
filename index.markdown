@@ -13,9 +13,8 @@ layout: home
 
 `const app = express();`
 
-// used body-parser library to properly decode the response body of POST
-
 {% highlight javascript %}
+// used body-parser library to properly decode the response body of POST
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 {% endhighlight %}
