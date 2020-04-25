@@ -33,10 +33,8 @@ layout: home
 
 // default address (say http://localhost:3000) will all be routed to this block.
 
-`app.get("/", (req, res) => {
-
+app.get("/", (req, res) => {
 	 res.sendFile(__dirname + "/app.html"); // uses the HTML file as output
-
 });
 
 // this will show the details of the user given a username
