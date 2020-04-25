@@ -35,7 +35,7 @@ layout: home
 
 `app.get("/", (req, res) => {`
 
-`    res.sendFile(__dirname + "/app.html"); // uses the HTML file as output
+	 `	    res.sendFile(__dirname + "/app.html"); // uses the HTML file as output
 
 });`
 
