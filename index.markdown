@@ -14,10 +14,12 @@ layout: home
 `const app = express();`
 
 // used body-parser library to properly decode the response body of POST
+
 {% highlight ruby %}
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 {% endhighlight %}
+
 // serving assets folder to use the css and js files
 
 `app.use(express.static(__dirname + "/assets"));`
