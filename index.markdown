@@ -15,7 +15,7 @@ layout: home
 
 // used body-parser library to properly decode the response body of POST
 
-{% highlight ruby %}
+{% highlight js %}
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 {% endhighlight %}
