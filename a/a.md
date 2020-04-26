@@ -2,7 +2,7 @@
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 title: "Simple CRUD Page By Mongo & Express"
-layout: post
+layout: page
 ---
 
 Források
