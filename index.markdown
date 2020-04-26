@@ -4,6 +4,7 @@
 
 layout: home
 ---
+## App.js
 
 {% highlight javascript %}
 // importing all libraries needed for this project
