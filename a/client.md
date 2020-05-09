@@ -1,3 +1,4 @@
+```
 <!DOCTYPE HTML>
 <html>
     <head>
@@ -84,12 +85,15 @@
         <script src="/js/jquery.js"></script>
         <script src="/js/bootstrap.min.js"></script>
         <script>
+```
+
+
+{% highlight javascript %}
 
             function updateUser(element) {
                 $(".update form input[name='_id']").val($(element).attr("data-id"));
                 $(".update form input[name='username']").val($(element).parent().parent().children(":first-child").text());
                 $(".update form input[name='password']").val($(element).parent().parent().children(":nth-child(2)").text());
-
                 $(".content > *").hide();
                 $(`.content > .update`).show();
             }
@@ -153,11 +157,14 @@
                     refreshUsers();
                     $(".sidebar li:first-child").trigger("click");
                 });
-
                 return false;
             });
-
             refreshUsers();
+            
+{% endhighlight %}
+
+```
         </script>
     </body>
 </html>
+```
