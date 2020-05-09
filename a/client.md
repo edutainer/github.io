@@ -86,7 +86,7 @@
         <script src="/js/bootstrap.min.js"></script>
         <script>
 ```
-
+1
 
 {% highlight javascript %}
 
@@ -97,6 +97,10 @@
                 $(".content > *").hide();
                 $(`.content > .update`).show();
             }
+
+{% endhighlight %}
+.
+{% highlight javascript %}
 
             function refreshUsers() {
                 $.get("/user/all")
@@ -116,6 +120,10 @@
                 });
             }
 
+{% endhighlight %}
+.
+{% highlight javascript %}
+
             function deleteUser(element) {
                 $.post("/user/remove", {_id: $(element).attr("data-id")})
                 .done((data) => {
@@ -124,6 +132,10 @@
                     }
                 });
             }
+
+{% endhighlight %}
+.
+{% highlight javascript %}
 
             $(".create form").submit(() => {
                 $.post("/user/register", { username: $(".create form input[name='username']").val(), password: $(".create form input[name='password']").val()})
@@ -136,6 +148,10 @@
                 });
                 return false;
             });
+
+{% endhighlight %}
+.
+{% highlight javascript %}
             
             $(".sidebar li").click(function() {
                 $(".sidebar li").removeClass("active");
@@ -146,6 +162,10 @@
                 $(".content > *").hide();
                 $(`.content > .${dataAction}`).show();
             });
+
+{% endhighlight %}
+.
+{% highlight javascript %}
 
             $("#update-form").submit(() => {
                 console.log("Updating...");
