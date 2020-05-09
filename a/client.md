@@ -13,13 +13,22 @@
     <body>
         <div class="container" style="margin-top: 40px">
             <div class="row">
+```
+.
+```
                 <div class="col-xs-2 sidebar">
                     <ul class="nav nav-pills nav-stacked">
                         <li class="active"><a href="#" data-action="all">Users</a></li>
                         <li><a href="#" data-action="create">Create a user</a></li>
                     </ul>
                 </div>
+```
+.
+```
                 <div class="col-xs-8 content" style="border-left: 1px lightgray dashed">
+```
+.
+```
                     <div class="all" style="display: block">
                         <table class="table table-striped table-bordered">
                             <thead>
@@ -32,6 +41,9 @@
                             <tbody></tbody>
                         </table>
                     </div>
+```
+.
+```
                     <div class="create" style="display: none;">
                         <form action="/user/create" method="POST">
                             <div class="row">
@@ -55,6 +67,9 @@
                             </div>
                         </form>
                     </div>
+```
+.
+```
                     <div class="update" style="display:none;">
                         <form action="/user/update" method="post" id="update-form">
                             <input type="hidden" name="_id">
@@ -79,7 +94,13 @@
                             </div>
                         </form>
                     </div>
+```
+.
+```
                 </div>
+```
+.
+```
             </div>
         </div>
         <script src="/js/jquery.js"></script>
