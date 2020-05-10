@@ -12,7 +12,7 @@
     </head>
     <body>
 ```    
-A tartalmat befoglaló elem nyitó tag:
+A tartalmat befoglaló elem (nyitó tag):
 ```
         <div class="container" style="margin-top: 40px">
             <div class="row">
@@ -26,7 +26,7 @@ Navigáció a sidebar-on:
                     </ul>
                 </div>
 ```
-A formokat tartalmazó elem nyitó tag.
+Az megjelenő adatokat tartalmazó elem (nyitó tag).
 ```
                 <div class="col-xs-8 content" style="border-left: 1px lightgray dashed">
 ```
