@@ -130,7 +130,12 @@ _A **frissítő adatokat** küldő **form input mezőit** feltöltjük._
             }
 
 {% endhighlight %}
-.
+
+A szerver "/user/all" útvonaláról (route), get kéréssel lekéri az adatbázis táblában (Mongo terminológiával kollekció) szereplő adatokat (a done függvény a data paraméterben kapja meg).
+A done függvény a tábla törzsét (tbody), majd, soronkat hozzáfűzve újratölti azt.
+Minden sor utolsó cellájába egy Update és egy Delete nyomógomb ("a" html elem - más néven link - gombként formázva) kerül. A sor többi cellájába, a data tömb soron lévő elemének, mint objektumnak a mezői kerülnek. Minden mező más-más cellába.
+A nyomógombok kattintásakor az "updateUser(this)" ill. a "deleteUser(this)" függvényhívás történik meg. Vagyis, paraméterként magát a nyomógomb elemet adjuk át.
+
 {% highlight javascript %}
 
             function refreshUsers() {
