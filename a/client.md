@@ -26,7 +26,7 @@ Navigáció a sidebar-on:
                     </ul>
                 </div>
 ```
-Az megjelenő adatokat tartalmazó elem (nyitó tag).
+A megjelenő adatokat tartalmazó elem (nyitó tag).
 ```
                 <div class="col-xs-8 content" style="border-left: 1px lightgray dashed">
 ```
@@ -98,7 +98,7 @@ A frissítendő felhasználói adatrekordok (Mongo terminológiával dokumentumo
                         </form>
                     </div>
 ```
-A formokat tartalmazó elem, (záró tag):
+A megjelenő adatokat tartalmazó elem, (záró tag):
 ```
                 </div>
 ```
