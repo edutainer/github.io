@@ -12,7 +12,7 @@
     </head>
     <body>
 ```    
-A tartalmat befoglaló elem (nyitó tag):
+A tartalmat befoglaló elemek (nyitó tag-ek):
 ```
         <div class="container" style="margin-top: 40px">
             <div class="row">
@@ -45,7 +45,7 @@ A tárolt felhasználói adatok táblázata:
                         </table>
                     </div>
 ```
-A rögzítendő új felhasználói adatrekordok (Mongo terminolúgiával dokumentumok) adatait küldő form::
+A rögzítendő új felhasználói adatrekordok (Mongo terminológiával dokumentumok) adatait küldő form::
 ```
                     <div class="create" style="display: none;">
                         <form action="/user/create" method="POST">
@@ -71,7 +71,7 @@ A rögzítendő új felhasználói adatrekordok (Mongo terminolúgiával dokumen
                         </form>
                     </div>
 ```
-A frissítendő felhasználói adatrekordok (Mongo terminolúgiával dokumentumok) adatait küldő form:
+A frissítendő felhasználói adatrekordok (Mongo terminológiával dokumentumok) adatait küldő form:
 ```
                     <div class="update" style="display:none;">
                         <form action="/user/update" method="post" id="update-form">
@@ -98,16 +98,16 @@ A frissítendő felhasználói adatrekordok (Mongo terminolúgiával dokumentumo
                         </form>
                     </div>
 ```
-A formokat tartalmazó elem, záró tag:
+A formokat tartalmazó elem, (záró tag):
 ```
                 </div>
 ```
-A tartalmat befoglaló elem záró tag: 
+A tartalmat befoglaló elemek (záró tag-ek): 
 ```
             </div>
         </div>
 ```        
-A skriptek:
+A szkriptek:
 ```
         <script src="/js/jquery.js"></script>
         <script src="/js/bootstrap.min.js"></script>
