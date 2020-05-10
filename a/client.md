@@ -113,7 +113,7 @@ A szkriptek:
         <script src="/js/bootstrap.min.js"></script>
         <script>
 ```
-++A **frissítő adatokat** küldő **form input mezőit** feltöltjük.++
+_A **frissítő adatokat** küldő **form input mezőit** feltöltjük._
 
  - a **name='_id'** attribútumú **input** mezőt, a paraméterként **megadott html-elem** **"data-id"** attribútumával
  - a **name='username'** attribútumú **input** mezőt, ha - mint például a jelen esetben - a paraméterül **kapott "element"**, egy **táblázatcella elem**, akkor a vele egy táblázat sorban lévő **első cella** tartalmával.
