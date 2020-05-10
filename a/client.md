@@ -176,7 +176,7 @@ Az alábbi deleteUser(element) függvény, post kérést küldve a szerver "/use
 
 {% endhighlight %}
 
-Az ".create" osztályhoz rendelt elemben található form elem ( az egyik fent látható form) submit eseménykezelőjének alábbi definíciója a következőket végzi.
+Az ".create" osztályhoz rendelt elemben található form elem ( az egyik fent látható form) submit eseménykezelőjének alábbi definíciója a következőket határozza meg.
 
 A rögzítendő új felhasználói adatrekordok (Mongo terminológiával dokumentumok) adatait küldő form submit gombjának kattintásakor meghívódik egy névtelen függvény, mely post kérést küldve a szerver "/user/register" útvonalára (route), átadva a form input elemeiben szereplő adatokat, arra utasítja az express szervert, hogy szúrjon be egy adatrekordot/dokumentumot az adatbázis táblába/kollekcióba. Sikeres adatbázis művelet esetén, a done függvény frissiti a felhasználói adatokat a fenti refreshUsers() függvény hívásával. Aktiválja a sidebar users gombjának, - az alábbi snippetet követő code snippet-ben látható - click eseményét. Majd törli a username és password input mezőket.
 
@@ -196,7 +196,7 @@ A rögzítendő új felhasználói adatrekordok (Mongo terminológiával dokumen
 
 {% endhighlight %}
 
-Az ".sidebar" osztályhoz rendelt elemben található li elemek ( fentebb láthatóak ) click eseménykezelőinek alábbi definíciója a következőket végzi.
+Az ".sidebar" osztályhoz rendelt elemben található li elemek ( fentebb láthatóak ) click eseménykezelőinek alábbi definíciója a következőket határozza meg.
 
 A sidebar valamelyik li elemének kattintásakor, a többit passzívvá teszi az active osztályból való kizárásával. Csak s kattintott elem lesz aktív. Az oldal tartalmának, a kattintott li elemben lévő "a" elem, "data-action" attribútumában szereplő értéknek megfelelő osztályú elemeit jeleníti csak meg, a többit elrejti.
 
@@ -214,7 +214,7 @@ A sidebar valamelyik li elemének kattintásakor, a többit passzívvá teszi az
 
 {% endhighlight %}
 
-Az "update-form" azonosítóhoz rendelt elem ( az egyik fent látható form) submit eseménykezelőjének alábbi definíciója a következőket végzi.
+Az "update-form" azonosítóhoz rendelt elem ( az egyik fent látható form) submit eseménykezelőjének alábbi definíciója a következőket határozza meg.
 
 A frissítendő felhasználói adatrekordok (Mongo terminológiával dokumentumok) adatait küldő form submit gombjának kattintásakor meghívódik egy névtelen függvény, mely post kérést küldve a szerver "/user/update" útvonalára (route), átadva a form input elemeiben szereplő adatokat, arra utasítja az express szervert, hogy frissítsen egy adatrekordot/dokumentumot az adatbázis táblában/kollekcióban. Sikeres adatbázis művelet esetén, a done függvény frissiti a felhasználói adatokat a fenti refreshUsers() függvény hívásával. Majd aktiválja a sidebar users gombjának az előző code snippet-ben látható click eseményét.
 
