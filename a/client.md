@@ -11,10 +11,13 @@
         </style>
     </head>
     <body>
+```    
+A tartalmat befoglaló elem nyitó tag:
+```
         <div class="container" style="margin-top: 40px">
             <div class="row">
 ```
-.
+Navigáció a sidebar-on:
 ```
                 <div class="col-xs-2 sidebar">
                     <ul class="nav nav-pills nav-stacked">
@@ -23,11 +26,11 @@
                     </ul>
                 </div>
 ```
-.
+A formokat tartalmazó elem nyitó tag.
 ```
                 <div class="col-xs-8 content" style="border-left: 1px lightgray dashed">
 ```
-.
+A tárolt felhasználói adatok táblázata:
 ```
                     <div class="all" style="display: block">
                         <table class="table table-striped table-bordered">
@@ -42,7 +45,7 @@
                         </table>
                     </div>
 ```
-.
+A rögzítendő új felhasználói adatrekordok (Mongo terminolúgiával dokumentumok) adatait küldő form::
 ```
                     <div class="create" style="display: none;">
                         <form action="/user/create" method="POST">
@@ -68,7 +71,7 @@
                         </form>
                     </div>
 ```
-.
+A frissítendő felhasználói adatrekordok (Mongo terminolúgiával dokumentumok) adatait küldő form:
 ```
                     <div class="update" style="display:none;">
                         <form action="/user/update" method="post" id="update-form">
@@ -95,14 +98,17 @@
                         </form>
                     </div>
 ```
-.
+A formokat tartalmazó elem, záró tag:
 ```
                 </div>
 ```
-.
+A tartalmat befoglaló elem záró tag: 
 ```
             </div>
         </div>
+```        
+A skriptek:
+```
         <script src="/js/jquery.js"></script>
         <script src="/js/bootstrap.min.js"></script>
         <script>
