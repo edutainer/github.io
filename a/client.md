@@ -176,7 +176,7 @@ Az alábbi deleteUser(element) függvény, post kérést küldve a szerver "/use
 
 {% endhighlight %}
 
-A rögzítendő új felhasználói adatrekordok (Mongo terminológiával dokumentumok) adatait küldő form submit gombjának kattintásakor meghívódik egy névtelen függvény, mely post kérést küldve a szerver "/user/register" útvonalára (route), átadva a form input elemeiben szereplő adatokat, arra utasítja az express szervert, hogy szúrjon be egy adatrekordot/dokumentumot az adatbázis táblába/kollekcióba. Sikeres adatbázis művelet esetén, a done függvény frissiti a felhasználói adatokat a fenti refreshUsers() függvény hívásával. Aktiválja a sidebar users gombjának, az alábbit küvető code snippet-ben látható click eseményét. Majd törli a username és password input mezőket.
+A rögzítendő új felhasználói adatrekordok (Mongo terminológiával dokumentumok) adatait küldő form submit gombjának kattintásakor meghívódik egy névtelen függvény, mely post kérést küldve a szerver "/user/register" útvonalára (route), átadva a form input elemeiben szereplő adatokat, arra utasítja az express szervert, hogy szúrjon be egy adatrekordot/dokumentumot az adatbázis táblába/kollekcióba. Sikeres adatbázis művelet esetén, a done függvény frissiti a felhasználói adatokat a fenti refreshUsers() függvény hívásával. Aktiválja a sidebar users gombjának, - az alábbi snippetet követő code snippet-ben látható - click eseményét. Majd törli a username és password input mezőket.
 
 {% highlight javascript %}
 
@@ -194,7 +194,7 @@ A rögzítendő új felhasználói adatrekordok (Mongo terminológiával dokumen
 
 {% endhighlight %}
 
-A sidebar valamelyik li elemének kattintásakor, a többit passzvvá teszi az active osztályból való kizárásával. Csak s kattintott elem lesz aktív. Az oldal tartalmának, a kattintott li elemben lévő "a" elem "data-action" attribútumában szereplő értéknek megfelelő elemeit jeleníti csak meg, a többit elrejti.
+A sidebar valamelyik li elemének kattintásakor, a többit passzívvá teszi az active osztályból való kizárásával. Csak s kattintott elem lesz aktív. Az oldal tartalmának, a kattintott li elemben lévő "a" elem, "data-action" attribútumában szereplő értéknek megfelelő osztályú elemeit jeleníti csak meg, a többit elrejti.
 
 {% highlight javascript %}
             
