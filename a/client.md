@@ -45,7 +45,7 @@ A tárolt felhasználói adatok táblázata:
                         </table>
                     </div>
 ```
-A rögzítendő új felhasználói adatrekordok (Mongo terminológiával dokumentumok) adatait küldő form::
+A rögzítendő új felhasználói adatrekordok (Mongo terminológiával dokumentumok) adatait küldő form:
 ```
                     <div class="create" style="display: none;">
                         <form action="/user/create" method="POST">
@@ -131,9 +131,12 @@ _A **frissítő adatokat** küldő **form input mezőit** feltöltjük._
 
 {% endhighlight %}
 
-A szerver "/user/all" útvonaláról (route), get kéréssel lekéri az adatbázis táblában (Mongo terminológiával kollekció) szereplő adatokat (a done függvény a data paraméterben kapja meg).
-A done függvény a tábla törzsét (tbody), majd, soronkat hozzáfűzve újratölti azt.
-Minden sor utolsó cellájába egy Update és egy Delete nyomógomb ("a" html elem - más néven link - gombként formázva) kerül. A sor többi cellájába, a data tömb soron lévő elemének, mint objektumnak a mezői kerülnek. Minden mező más-más cellába.
+Az alábbi refreshUsers() függvény, get kéréssel lekéri az adatbázis táblában (Mongo terminológiával kollekció) szereplő adatokat, a szerver "/user/all" útvonaláról (route). A done függvény, egy tömb adatszerkezetben, a data paraméterben kapja meg a lekért adatokat. Minden tömbelem egy objektum, ami egy rekordnak/dokumentumnak felel meg.
+
+A done függvény kiüríti a tábla törzsét (tbody), majd soronkat hozzáfűzve újratölti azt.
+
+Minden sor utolsó cellájába egy Update és egy Delete nyomógomb ("a" html elem - más néven link - gombként formázva) kerül. A sor többi cellájába, a data tömb soron lévő elemének, mint objektumnak a mezői (username, password) kerülnek. Minden mező más-más cellába.
+
 A nyomógombok kattintásakor az "updateUser(this)" ill. a "deleteUser(this)" függvényhívás történik meg. Vagyis, paraméterként magát a nyomógomb elemet adjuk át.
 
 {% highlight javascript %}
@@ -157,7 +160,9 @@ A nyomógombok kattintásakor az "updateUser(this)" ill. a "deleteUser(this)" f�
             }
 
 {% endhighlight %}
-.
+
+Az alábbi deleteUser(element) függvény, post kérést küldve a szerver "/user/remove" útvonalára (route), megadva a törlendő elem azonosítóját, arra utasítja az express szervert, hogy törölje az adott azonosítóval rendelkező rekordot/dokumentumot. Sikeres adatbázis művelet esetén, a done függvény frissiti a felhasználói adatokat a fenti refreshUsers() függvény hívásával.
+
 {% highlight javascript %}
 
             function deleteUser(element) {
@@ -170,7 +175,9 @@ A nyomógombok kattintásakor az "updateUser(this)" ill. a "deleteUser(this)" f�
             }
 
 {% endhighlight %}
-.
+
+A rögzítendő új felhasználói adatrekordok (Mongo terminológiával dokumentumok) adatait küldő form submit gombjának kattintásakor meghívódik egy névtelen függvény, mely post kérést küldve a szerver "/user/register" útvonalára (route), átadva a form input elemeiben szereplő adatokat, arra utasítja az express szervert, hogy szúrjon be egy adatrekordot/dokumentumot az adatbázis táblába/kollekcióba. Sikeres adatbázis művelet esetén, a done függvény frissiti a felhasználói adatokat a fenti refreshUsers() függvény hívásával. Aktiválja a sidebar users gombjának, az alábbit küvető code snippet-ben látható click eseményét. Majd törli a username és password input mezőket.
+
 {% highlight javascript %}
 
             $(".create form").submit(() => {
@@ -186,7 +193,9 @@ A nyomógombok kattintásakor az "updateUser(this)" ill. a "deleteUser(this)" f�
             });
 
 {% endhighlight %}
-.
+
+A sidebar valamelyik li elemének kattintásakor, a többit passzvvá teszi az active osztályból való kizárásával. Csak s kattintott elem lesz aktív. Az oldal tartalmának, a kattintott li elemben lévő "a" elem "data-action" attribútumában szereplő értéknek megfelelő elemeit jeleníti csak meg, a többit elrejti.
+
 {% highlight javascript %}
             
             $(".sidebar li").click(function() {
@@ -200,7 +209,11 @@ A nyomógombok kattintásakor az "updateUser(this)" ill. a "deleteUser(this)" f�
             });
 
 {% endhighlight %}
+
+A frissítendő felhasználói adatrekordok (Mongo terminológiával dokumentumok) adatait küldő form submit gombjának kattintásakor meghívódik egy névtelen függvény, mely post kérést küldve a szerver "/user/update" útvonalára (route), átadva a form input elemeiben szereplő adatokat, arra utasítja az express szervert, hogy frissítsen egy adatrekordot/dokumentumot az adatbázis táblában/kollekcióban. Sikeres adatbázis művelet esetén, a done függvény frissiti a felhasználói adatokat a fenti refreshUsers() függvény hívásával. Majd aktiválja a sidebar users gombjának az előző code snippet-ben látható click eseményét.
+
 .
+
 {% highlight javascript %}
 
             $("#update-form").submit(() => {
