@@ -22,7 +22,7 @@ var express = require("express"), MongoClient = require('mongodb').MongoClient,
 const app = express();
 {% endhighlight %}
 
-Az üzenetek feldolgozása, történjen meg:
+A HTTP kérések törzsében érkező üzenetek feldolgozása, történjen meg:
 
 {% highlight javascript %}
 // used body-parser library to properly decode the response body of POST
