@@ -116,8 +116,8 @@ A szkriptek:
 A frissítő adatokat küldő form input mezőit feltöltjük.
 
  - a name='_id' attribútumú input mezőt, a paraméterként megadott html-elem "data-id" attribútumával
- - a name='username' attribútumú input mezőt, - ha, mint például a jelen esetben, a paraméterül kapott "element", egy táblázat cella eleme, akkor - a vele egy táblázat sorban lévő első cella tartalmával.
- - a name='password' attribútumú input mezőt, - ha, mint például a jelen esetben, a paraméterül kapott "element", egy táblázat cella eleme, akkor - a vele egy táblázat sorban lévő mésodik cella tartalmával.
+ - a name='username' attribútumú input mezőt, ha - mint például a jelen esetben - a paraméterül kapott "element", egy táblázatcella elem, akkor a vele egy táblázat sorban lévő első cella tartalmával.
+ - a name='password' attribútumú input mezőt, ha - mint például a jelen esetben - a paraméterül *kapott "element"*, egy *táblázatcella elem*, akkor a vele egy táblázat sorban lévő *második cella* tartalmával.
 
 {% highlight javascript %}
 
