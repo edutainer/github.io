@@ -1,5 +1,5 @@
 [Simple SPA](https://github.com/scalagos0123/men-stack)
-## package.js
+## package.json
 
 A "dependencies" szekció, a függőségeket határozza meg, vagyis azt, hogy mely szoftver komponensek szükségesek az alkalmazás futtatásához.
 A mongodb 3.1.13-at megelőző verziói sérülékenyek a "szolgáltatás megtagadás" típusú támadásokkal szemben (is).
@@ -19,3 +19,4 @@ Ezt a problémát, úgy kezelhetjük legegyszerűbben, ha az idézőjelek közü
   }
 }
 ```
+[Kliens kód](https://edutainer.github.io/github.io/a/client#) | [Szerver kód](https://edutainer.github.io/github.io/a/a#)
