@@ -1,13 +1,12 @@
 ---
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-title: "Simple CRUD Page By Mongo & Express"
+title: "Simple CRUD Page By Mongo & Express Server"
 layout: page
 ---
 
-Források
-
-## A szerver ( app.js ) 
+ ## app.js 
+Egyszerű [mintaalkalmazás](https://github.com/scalagos0123/men-stack) szerveroldali kódja 
 
 Töltsük be az express- és egyéb a szerver kommunikációját kezelő programkönyvtárakat:
 
