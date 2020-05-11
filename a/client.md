@@ -1,4 +1,4 @@
- 
+[Simple SPA](https://github.com/scalagos0123/men-stack)
 
 ## app.html
 
