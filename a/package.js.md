@@ -1,6 +1,6 @@
-#package.js.md
+# package.js
 
-A "dependencies" szekció a függőségeket határozza meg, vagyis azt, hogy mely szoftver komponensek szükségesek az alkalmazás futtatásához.
+A "dependencies" szekció, a függőségeket határozza meg, vagyis azt, hogy mely szoftver komponensek szükségesek az alkalmazás futtatásához.
 A mongodb 3.1.13-at megelőző verziói sérülékenyek a "szolgáltatás megtagadás" típusú támadásokkal szemben (is).
 A repóból letöltött fájlban egy korábbi verzió van beállítva a "mongodb" kulcshoz rendelve.
 Ezért figyelmeztet az npm csomagkezelő a mongodb komponensek telepítése során.
