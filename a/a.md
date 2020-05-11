@@ -7,7 +7,7 @@ layout: page
 
 ## app.js 
 
-####Egyszerű [mintaalkalmazás](https://github.com/scalagos0123/men-stack) szerveroldali kódja 
+#### Egyszerű [mintaalkalmazás](https://github.com/scalagos0123/men-stack) szerveroldali kódja 
 
 Töltsük be az express- és egyéb a szerver kommunikációját kezelő programkönyvtárakat:
 
