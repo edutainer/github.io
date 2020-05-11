@@ -1,3 +1,4 @@
+
 # package.js
 
 A "dependencies" szekció, a függőségeket határozza meg, vagyis azt, hogy mely szoftver komponensek szükségesek az alkalmazás futtatásához.
