@@ -245,3 +245,5 @@ A frissítendő felhasználói adatrekordok (Mongo terminológiával dokumentumo
     </body>
 </html>
 ```
+
+[csomagkezelő fájl](https://edutainer.github.io/github.io/a/package.json#) | [Szerver kód](https://edutainer.github.io/github.io/a/a#)
